@@ -1,8 +1,16 @@
 version: "3.9"
 services:
-  web:
+  service1:
     build: .
     ports:
-      - "8000:3000"
+      - "3000:3000"
+  service2:
+    build: .
+    ports:
+      - "3001:3001"
+  service3:
+    build: .
+    ports:
+      - "3002:3002"
   redis:
     image: "redis:alpine"
